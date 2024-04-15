@@ -3,7 +3,7 @@
 <header>
   <nav class="navbar navbar-light" style="background-color: lightskyblue">
     <div class="container">
-      <a class="navbar-brand" href={% url 'blog:index' %}>
+      <a class="navbar-brand" href="{% url 'blog:index' %}">
         <img 
           class="d-inline-block align-top"
           src={% static 'img/logo.png' %}
@@ -13,11 +13,11 @@
         >
         Блогикум
       </a>
-      <ul class="nav  nav-pills">
+      <ul class="nav nav-pills">
         <li class="nav-item">
           <a
             class="nav-link {% if view_name == 'blog:index' %}active{% endif %}"
-            href={% url 'blog:index' %}
+            href="{% url 'blog:index' %}"
           >
             Лента записей
           </a>
@@ -25,7 +25,7 @@
         <li class="nav-item">
           <a 
             class="nav-link {% if view_name == 'pages:about' %}active{% endif %}"
-            href={% url 'pages:about' %}
+            href="{% url 'pages:about' %}"
           >
             О проекте
           </a>
@@ -33,7 +33,7 @@
         <li class="nav-item">
           <a
             class="nav-link {% if view_name == 'pages:rules' %}active{% endif %}"
-            href={% url 'pages:rules' %}
+            href="{% url 'pages:rules' %}"
           >
             Наши правила
           </a>
